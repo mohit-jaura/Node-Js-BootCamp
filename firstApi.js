@@ -1,7 +1,7 @@
 const http = require("http");
 const url = require("url");
 const fileSystem = require("fs");
-
+const slugify = require("slugify");
 const productData = fileSystem.readFileSync(
   `${__dirname}/1-node-farm/starter/dev-data/data.json`,
   "utf-8"
